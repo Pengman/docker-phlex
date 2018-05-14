@@ -24,8 +24,8 @@ fi
 
 # fetch site
 if [ ! -d /config/www/Phlex/.git ]; then
-    echo "No repo found, making new dir."
-    mkdir -p /config/www
+    # echo "No repo found, making new dir."
+    # mkdir -p /config/www
     echo "No repo found, pulling."
     git clone -b ${BRANCH} https://github.com/d8ahazard/Phlex /config/www/Phlex
 fi
