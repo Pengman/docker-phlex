@@ -1,5 +1,5 @@
 FROM linuxserver/nginx:latest
-MAINTAINER Digitalhigh
+MAINTAINER Pengman
 
 # set version label
 ARG BUILD_DATE
@@ -10,7 +10,7 @@ ARG FASTCGIPORT=9000
 ARG BRANCH='master'
 ARG PORTS='$HTTPPORT:$HTTPSPORT:$FASTCGIPORT'
 
-LABEL build_version="Digitalhigh version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL build_version="Pengman version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # add local files, set custom NGINX directory
 COPY root /
